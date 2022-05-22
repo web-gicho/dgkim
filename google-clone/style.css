@@ -99,6 +99,11 @@ section .main_search {
     box-sizing: border-box;
     padding-left: 36px;
 }
+@media (max-width: 584px) {
+    section .main_search {
+        width: 100%
+    }
+}
 section > i {
     position: relative;
     top: -26px;

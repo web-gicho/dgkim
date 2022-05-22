@@ -4,29 +4,24 @@
         <title>웹 기초 스터디</title>
         <meta property="og:title" content="웹 기초 스터디 페이지" />
         <meta property="og:description" content="" />
-        <!-- <script src=""></script> -->
         <link rel="stylesheet" type="text/CSS" href="style.css" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-380620YK3F"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-380620YK3F');
+        </script>
     </head>
     <body>
-        <header>
-            <h1>Basic Web Study</h1>
-        </header>
-
-        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><button class="button1">Google</button></a>
-        <a href="/img/Black hole Our Galaxy.png" target="_blank" rel="noopener noreferrer"><button class="button2">WARNING</button></a>
-
-
-        <div class="content">
-            <div>a</div>
-            <div>b</div>
-        </div>
-
-        <div class="responsive">반응형 상자</div>
-
-        <img src="/img/Hubble Deep Space.JPG" alt="Image of Hubble Deep Space">
-
-        <footer>
-            blank space
-        </footer>
+        <div class="label">
+            counter: 
+			<p id="counter">0</p>
+		</div>
+		<button>버튼을 클릭하세요</button>
+        <input type="text" value="" />
+        <script src="main.js"></script>
     </body>
 </html>
