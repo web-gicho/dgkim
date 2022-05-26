@@ -90,6 +90,7 @@ section .logo > span:nth-of-type(6) {
     color: #ea4335;
 }
 section .main_search {
+    /* justify-content: center; */
     width: 100%;
     margin-top: 26px;
     height: 36px;
@@ -101,7 +102,7 @@ section .main_search {
 }
 @media (max-width: 584px) {
     section .main_search {
-        width: 100%
+        width: 100%;
     }
 }
 section > i {

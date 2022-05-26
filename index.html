@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>웹 기초 스터디</title>
-        <meta property="og:title" content="웹 기초 스터디 페이지" />
-        <meta property="og:description" content="" />
+        <title>Kim DongGyu</title>
+        <meta property="og:title" content="Kim DongGyu" />
+        <meta property="og:description" content="Web Gicho Portfolio" />
         <link rel="stylesheet" type="text/CSS" href="style.css" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="https://kit.fontawesome.com/4482f7618f.js" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-380620YK3F"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -16,12 +17,125 @@
         </script>
     </head>
     <body>
-        <div class="label">
-            counter: 
-			<p id="counter">0</p>
-		</div>
-		<button>버튼을 클릭하세요</button>
-        <input type="text" value="" />
+        <header>
+            <ul class="nav_bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+            </ul>
+        </header>
+        <section class="home">
+            <div>
+                <div id="intro">
+                    <div id="name">Kim DongGyu</div>
+                    <div id="greeting">Hello, I am from Republic of Korea. I am an undergraduate student majoring in economics and minoring in linguistics.</div>
+                </div>
+                <div id="social-icons-vertical">
+                    <a href="mailto:0dgkim@gmail.com">
+                        <img src="img/icon-email.png" alt="email icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/donggyukim/">
+                        <img src="img/icon-linkedin.png" alt="linkedin icon">
+                    </a>
+                    <a href="">
+                        <img src="img/icon-instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://github.com/8dgkim">
+                        <img src="img/icon-github.png" alt="github icon">
+                    </a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="about">
+                    <p class="title">About</p>
+                    <div>Everything is possible. Based on this philosophy, I dream and fill myself with curiosity about myself and the world. I appreciate the joy of self-driven learning, pursue critical thinking derived from logic, and try to grasp the essence of things through rational judgment with help of my relaxed nature</div>
+                </div>
+                <div id="interests">
+                    <p class="title">Interests</p>
+                    <div id="interest-list">
+                        <div>
+                            <div>Investing & Trading</div>
+                            <div>Fingerstyle Guitar</div>
+                        </div>
+                        <div>
+                            <div>Foreign Languages</div>
+                            <div>Card Magic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <p class="title">Skills & Interests</p>
+            <div>
+                <div id="skills">
+                    <p>Microsoft Office, TradingView</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge1"></div>
+                    </div>
+                    <p>Notion, Figma, Wix</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge2"></div>
+                    </div>
+                    <p>Web Front-End</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge3"></div>
+                    </div>
+                </div>
+                <div id="languages">
+                    <p>Korean</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge4"></div>
+                    </div>
+                    <p>English</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge5"></div>
+                    </div>
+                    <p>Spanish</p>
+                    <div class="bar">
+                        <div class="gauge" id="gauge6"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <p class="title">Project</p>
+            <div class="proj">
+                <div class="image">
+                    <img src="img/Kyrics.png" alt="Kyrics home page">
+                </div>
+                <div class="proj-content">
+                    <p>Kyrics</p>
+                    <div>
+                        Kyrics is a website to learn Korean with K-pop lyrics.
+                    </div>
+                    <button onclick="window.open('https://www.kyrics.org', '_blank')">Visit Kyrics</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="title">Contact</p>
+            <div id="contact-info">
+                <p>0dgkim@gmail.com</p>
+                <p>+82-10-2611-9034</p> 
+                <div id="social-icons-horizontal">
+                    <a href="mailto:0dgkim@gmail.com">
+                        <img src="img/icon-email.png" alt="email icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/donggyukim/">
+                        <img src="img/icon-linkedin.png" alt="linkedin icon">
+                    </a>
+                    <a href="">
+                        <img src="img/icon-instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://github.com/8dgkim">
+                        <img src="img/icon-github.png" alt="github icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <button onclick="topFunction()" class="button" id="topButton"><i class="fa-solid fa-angle-up"></i></button>
         <script src="main.js"></script>
     </body>
 </html>

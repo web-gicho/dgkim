@@ -1,18 +1,20 @@
-const customButton = document.querySelector("button");
-const customLabel = document.querySelector(".label");
-const customText = document.querySelector("#counter");
-const customInput = document.querySelector("input");
+//Get the button
+var topButton = document.getElementById("topButton");
 
-customLabel.classList.add("active");
-// customLabel.classList.remove('label');
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-function clickHandler() {
-    customText.innerText = parseInt(customText.innerText) + 1;
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
 }
 
-function changeHandler(event) {
-    console.log(event.target.value);
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
-customButton.addEventListener("click", clickHandler);
-customInput.addEventListener("change", changeHandler);
