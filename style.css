@@ -76,18 +76,17 @@ header > .nav_bar > li > a {
 
 /* section home */
 .home {
-    height: 1050px;
+    height: 800px;
     display: flex;
     position: relative;
     flex-direction: column;
-    /* width: 90%; */
 }
 .home > div {
     display: flex;
 }
 #intro {
     margin-top: 120px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     margin-left: 10%;
     width: 100%;
 }
